@@ -17,8 +17,8 @@ def kontrol_et():
 
 def Mail_At():
     mail = MIMEMultipart()
-    mail["From"]="kc4n6forensics@gmail.com"
-    mail["To"]="kc4n6forensics@gmail.com"
+    mail["From"]="mail@gmail.com"
+    mail["To"]="mail@gmail.com"
     mail["Subject"]="Server'a saldiri olabilir!!!!"
     Mail_icerigi="son birkaC dakika icerisinde fazla sayida giris denemesi yapildi..."
     icerik = MIMEText(Mail_icerigi,"plain")
@@ -31,7 +31,7 @@ def Mail_At():
         print("ehlo da tamam kenks")
         gonder.starttls()
         print("tlssi de baslattik kenks")
-        gonder.login("kc4n6forensics@gmail.com","Sh1244244b.")
+        gonder.login("Buraya mail adresini yaz","buraya parolani yaz")
         print("login olduk kenks")
         gonder.sendmail(mail["From"],mail["To"],mail.as_string())
         print("maili de attik kenksss.")
